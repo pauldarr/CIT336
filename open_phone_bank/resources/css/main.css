@@ -1,0 +1,204 @@
+/* Main elements */
+html {
+    background-color: #6495ED;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 40px 15px;
+    max-width: 90% !important;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+    border: 1px solid black;
+}
+
+header {
+    text-align: center;
+    max-width:90% !important;
+    margin-right: auto;
+    margin-left: auto;
+    border-bottom: 2px solid black;
+    padding: .5em 0;
+}
+
+footer {
+    clear: both;
+    border-top: 2px solid black;
+}
+
+footer p {
+    text-align: right;
+    font-size: 80%;
+}
+
+/* Main flexbox */
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Arial, sans-serif;
+}
+
+.leftFlex {
+    flex:1 50%;
+    float: left;
+    padding: 5px 5px 5px 5px;
+}
+
+.rightFlex {
+    flex:1 40%;
+    float: right;
+    padding: 5px 5px 5px 5px;
+}
+
+.category {
+    margin: auto;
+    width: 80%;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+}
+
+aside {
+    float: left;
+    width: 20%;
+}
+
+section {
+    float: left;
+    width: 79%;
+    padding: 5px 5px 5px 5px;
+}
+
+.table {
+    overflow-x: auto;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: Arial, sans-serif;
+}
+
+h1{
+	font-size: 2em;
+	line-height: 1em;
+    color: #6495ED;
+    text-align: center;
+}
+
+h2{
+	  font-size: 1.7em;
+	  line-height: 1em;
+}
+
+h3{
+	  font-size: 1.3em;
+	  line-height: 1em;
+}
+
+h4{
+	  font-size: 1em;
+	  line-height: 1em;
+}
+
+h5{
+	  font-size: 0.8em;
+	  line-height: 1em;
+}
+
+h6{
+	  font-size: 0.7em;
+	  line-height: 1em;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+    padding-bottom: 1em;
+}
+
+li {
+    padding-bottom: 0.5em;
+}
+
+a {
+    color: #6495ED;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000FF;
+}
+
+br {
+    clear: left;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-bottom: 1em;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: .2em .5em .2em .5em;
+    text-align: left;
+}
+
+form {
+
+}
+
+/* Additional styles for the application */
+#add_voter_form, #edit_voter_form #edit_script_form {
+    margin: .5em 0;
+}
+
+#add_voter_form label, #edit_voter_form #edit_script_form label {
+    width: 6em;
+    padding-right: 1em;
+    padding-bottom: .5em;
+    float: left;
+}
+#add_voter_form input, #edit_voter_form, #edit_script_form input {
+    float: left;
+}
+#add_voter_form input[text], #edit_voter_form input[text], #edit_script_form[text] {
+    width: 15em;
+}
+
+.big {
+    font-size: 150%;
+    margin: .5em 0;
+}
+
+.img-responsive {
+    max-width: 100%; 
+    height: auto;
+    display:block;
+}
+
+@media all and (max-width: 480px) {
+
+.banner {
+    flex-direction: column;
+}
+
+.logo {
+        
+/* Return them to document order */
+    order: 0;
+}
+    
+.logo {
+    display: block;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%; 
+    }
+}
